@@ -13,6 +13,6 @@ export const styles = StyleSheet.create({
       shadowOpacity: 1,
       justifyContent:'center',
       paddingLeft:20,
-      marginTop: 30
+      marginTop: 30,
       },
     });

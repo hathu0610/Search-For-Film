@@ -37,6 +37,20 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "film-tvOS";
 		};
+		52352DEB23D5B47100DEF5ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52352DE623D5B47000DEF5ED /* BVLinearGradient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = BVLinearGradient;
+		};
+		52352DED23D5B47100DEF5ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52352DE623D5B47000DEF5ED /* BVLinearGradient.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 64AA15081EF7F30100718508;
+			remoteInfo = "BVLinearGradient-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +71,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = film/main.m; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* film-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "film-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* film-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "film-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52352DE623D5B47000DEF5ED /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
 		5B104522197577122F10B7C1 /* libPods-film-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-film-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649D6FBFD2D2B8ACF5C29BBC /* libPods-film-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-film-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79354335DB05E9C14E923834 /* Pods-filmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-filmTests.release.xcconfig"; path = "Target Support Files/Pods-filmTests/Pods-filmTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +149,6 @@
 				0AFB633C81B9143B7FDF1F80 /* Pods-filmTests.debug.xcconfig */,
 				79354335DB05E9C14E923834 /* Pods-filmTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -165,9 +179,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		52352DE723D5B47000DEF5ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52352DEC23D5B47100DEF5ED /* libBVLinearGradient.a */,
+				52352DEE23D5B47100DEF5ED /* libBVLinearGradient.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				52352DE623D5B47000DEF5ED /* BVLinearGradient.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -308,12 +332,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 52352DE723D5B47000DEF5ED /* Products */;
+					ProjectRef = 52352DE623D5B47000DEF5ED /* BVLinearGradient.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* film */,
@@ -323,6 +354,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		52352DEC23D5B47100DEF5ED /* libBVLinearGradient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBVLinearGradient.a;
+			remoteRef = 52352DEB23D5B47100DEF5ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52352DEE23D5B47100DEF5ED /* libBVLinearGradient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBVLinearGradient.a;
+			remoteRef = 52352DED23D5B47100DEF5ED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
