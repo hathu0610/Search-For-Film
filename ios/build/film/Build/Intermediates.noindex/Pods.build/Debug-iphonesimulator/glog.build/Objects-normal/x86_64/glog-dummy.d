@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/macbookpro/film/ios/Pods/Target\ Support\ Files/glog/glog-dummy.m \
-  /Users/macbookpro/film/ios/Pods/Target\ Support\ Files/glog/glog-prefix.pch
+  /Users/macbookpro/react-native-film/ios/Pods/Target\ Support\ Files/glog/glog-dummy.m \
+  /Users/macbookpro/react-native-film/ios/Pods/Target\ Support\ Files/glog/glog-prefix.pch

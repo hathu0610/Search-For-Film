@@ -6,24 +6,12 @@ export const styles = StyleSheet.create({
         
     },
 
-    logobox:{
-        width: '43%',
-        height: '30%',
-        borderRadius: 12,
-        backgroundColor: "#ffffff",
-        shadowColor: "rgba(0, 0, 0, 0.24)",
-        shadowOffset: {
-            width: 0,
-            height: 5
-        },
-        shadowRadius: 30,
-        shadowOpacity: 1,
-        marginTop: '30%',
-        marginLeft: '30%',
-        marginBottom: '5%',
-        padding: '18%',
-        justifyContent:'space-between',
-        alignItems:'center'
+
+    logobg:{
+        width:100,
+        height:100,
+        justifyContent:'center',
+        alignItems:'center',
     },
     logotext:{ 
         width: 100,
@@ -32,7 +20,6 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: "bold",
         fontStyle: "normal",
-
         textAlign: "center",
         color: "#ffbb3b"
     },
@@ -49,9 +36,11 @@ export const styles = StyleSheet.create({
         fontWeight: "bold",
         fontStyle: "normal",
         textAlign: "left",
-        color: "#5a5a5a"
+        color: "#5a5a5a",
+   
     },
     inputbox : {
+        padding: 10,
         borderRadius: 9,
         width: 285,
         height: 42,
@@ -71,6 +60,36 @@ export const styles = StyleSheet.create({
         fontWeight: "500",
         textAlign: "center",
         color: "#5a5a5a", 
-    }
+    },
+    noborderlogobox :{
+            width: 151,
+            height: 152,
+            borderRadius: 12,
+            marginTop: '30%',
+            marginBottom: '10%',
+            padding: '10%',
+            justifyContent:'space-between',
+            alignItems:'center'
+    },    
+    logobox:{
+        width: 151,
+        height: 152,
+        borderRadius: 12,
+        backgroundColor: "#ffffff",
+        shadowColor: "rgba(0, 0, 0, 0.24)",
+        shadowOffset: {
+            width: 0,
+            height: 5
+        },
+        shadowRadius: 30,
+        shadowOpacity: 1,
+        marginTop: '30%',
+        marginLeft: '30%',
+        marginBottom: '5%',
+        padding: '3%',
+        paddingLeft:'6%',
+        justifyContent:'space-between',
+        alignItems:'center'
+    },
           
 });

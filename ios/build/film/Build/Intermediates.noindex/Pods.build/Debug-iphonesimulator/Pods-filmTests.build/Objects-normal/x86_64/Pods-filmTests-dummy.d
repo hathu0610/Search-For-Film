@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/macbookpro/film/ios/Pods/Target\ Support\ Files/Pods-filmTests/Pods-filmTests-dummy.m
+  /Users/macbookpro/react-native-film/ios/Pods/Target\ Support\ Files/Pods-filmTests/Pods-filmTests-dummy.m

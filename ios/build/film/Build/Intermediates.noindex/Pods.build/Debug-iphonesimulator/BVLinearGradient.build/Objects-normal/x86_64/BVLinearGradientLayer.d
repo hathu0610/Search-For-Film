@@ -1,0 +1,4 @@
+dependencies: \
+  /Users/macbookpro/react-native-film/node_modules/react-native-linear-gradient/BVLinearGradient/BVLinearGradientLayer.m \
+  /Users/macbookpro/react-native-film/ios/Pods/Target\ Support\ Files/BVLinearGradient/BVLinearGradient-prefix.pch \
+  /Users/macbookpro/react-native-film/node_modules/react-native-linear-gradient/BVLinearGradient/BVLinearGradientLayer.h

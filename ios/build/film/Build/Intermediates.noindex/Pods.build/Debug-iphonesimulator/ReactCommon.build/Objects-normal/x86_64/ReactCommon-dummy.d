@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/macbookpro/film/ios/Pods/Target\ Support\ Files/ReactCommon/ReactCommon-dummy.m \
-  /Users/macbookpro/film/ios/Pods/Target\ Support\ Files/ReactCommon/ReactCommon-prefix.pch
+  /Users/macbookpro/react-native-film/ios/Pods/Target\ Support\ Files/ReactCommon/ReactCommon-dummy.m \
+  /Users/macbookpro/react-native-film/ios/Pods/Target\ Support\ Files/ReactCommon/ReactCommon-prefix.pch

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, ImageBackground,Image,TextInput,Button} from 'react-native'
+import { Text, View, ImageBackground,Image,TextInput,Button,  TouchableHighlight} from 'react-native'
 import {styles} from './LoginScreenStyle'
 import {CustomButton} from '../../component/CustomButton'
 import LinearGradient from 'react-native-linear-gradient';
@@ -11,9 +11,8 @@ export default class LoginScreen extends Component {
                <ImageBackground source = {require('../../component/images/LoginScreen/LoginBG.png')} style = {styles.libg} imageStyle= {{opacity:0.5}}>
                 <LinearGradient start={{x: 0, y: 0}} end={{x: 0, y: 1}} colors={['#ffffff00','#ffffff00','#ffffff','#F2F2F2']} style={styles.linearGradient}>
                 <View style = {styles.logobox}>
-                    <View style = {styles.moviebutton}>
-                        <Image source = {require('../../component/images/LoginScreen/movie-player-play-button.png')} style = {{width:'100%',height:'100%'}}></Image>
-                    </View>
+                <ImageBackground source = {require('../../component/images/LoginScreen/logo.config.png')} style = {styles.logobg}>
+                </ImageBackground>
                     <View>
                         <Text style = {styles.logotext}> PHOTOPLAY</Text>
                     </View>
@@ -23,16 +22,22 @@ export default class LoginScreen extends Component {
                     <Text style = {styles.title}> Email</Text>
                 </View>
                 <View>
-                    <TextInput style = {styles.inputbox}/>
+                    <TextInput style = {styles.inputbox} placeholder = "email here"/>
                 </View>
                 <View style ={{paddingTop: 10}}>
-                    <Text style = {styles.title}> Password</Text>
+                    <Text style = {styles.title} > Password</Text>
+                </View>
+                <View >
+                    <View style = {[styles.inputbox,{flexDirection:'row',justifyContent:'space-between'}]}>
+                    <TextInput  placeholder = "password here"/>
+                    <TouchableHighlight onPress={() => this.props.navigation.navigate('ForgotPassScreen')}>
+                        <Text style = {[styles.heading,{fontWeight:'bold'}]} >FORGOT?</Text>
+                    </TouchableHighlight>
+                    </View>
+
                 </View>
                 <View>
-                    <TextInput style = {styles.inputbox}/>
-                </View>
-                <View>
-                <CustomButton title = "LOGIN" buttoncolor = "#ffbb3b" textcolor = 'white'/>
+                <CustomButton title = "LOGIN" buttoncolor = "#ffbb3b" textcolor = 'white' buttonclick = {() => this.props.navigation.navigate('AppStack')}/>
                 </View>
                 </View>
                 </LinearGradient>

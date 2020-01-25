@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>7D2481F9-0D5B-4760-9E1A-4225EF95117D</key>
+		<key>9B557178-BBCC-42A6-A57A-AEAD4948B19D</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,13 +15,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>7D2481F9-0D5B-4760-9E1A-4225EF95117D.xcactivitylog</string>
+			<string>9B557178-BBCC-42A6-A57A-AEAD4948B19D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>W</string>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>film project</string>
@@ -32,13 +32,13 @@
 			<key>signature</key>
 			<string>Building workspace film with scheme film and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>601199281.41465604</real>
+			<real>601650637.80801499</real>
 			<key>timeStoppedRecording</key>
-			<real>601199286.26048398</real>
+			<real>601650699.03168499</real>
 			<key>title</key>
 			<string>Building workspace film with scheme film and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>7D2481F9-0D5B-4760-9E1A-4225EF95117D</string>
+			<string>9B557178-BBCC-42A6-A57A-AEAD4948B19D</string>
 		</dict>
 		<key>EB557B61-EBEF-47E2-A108-EAEF76CFEC19</key>
 		<dict>

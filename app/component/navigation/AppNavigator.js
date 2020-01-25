@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
 import { createStackNavigator } from 'react-navigation-stack';
-import {LoginScreen} from "../../screen"
-
+import { LoginScreen, HomeScreen } from "../../screen"
 const AppStack = createStackNavigator({   
-    LoginScreen: LoginScreen
-    
+    HomeScreen: HomeScreen
   },
   {
-    initialRouteName: 'LoginScreen',
+    initialRouteName: 'HomeScreen',
   });
 
 export default AppStack;
