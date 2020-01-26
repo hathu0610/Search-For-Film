@@ -9,7 +9,7 @@ export default class LoginScreen extends Component {
         return (
             <View style = {{flex:1,width:'100%', alignItems:'center'}}>
                <ImageBackground source = {require('../../component/images/LoginScreen/LoginBG.png')} style = {styles.libg} imageStyle= {{opacity:0.5}}>
-                <LinearGradient start={{x: 0, y: 0}} end={{x: 0, y: 1}} colors={['#ffffff00','#ffffff00','#ffffff','#F2F2F2']} style={styles.linearGradient}>
+                <LinearGradient start={{x: 0, y: 0}} end={{x: 0, y: 1}} colors={['#ffffff00','#ffffff00','#F2F2F2']} style={styles.linearGradient}>
                 <View style = {styles.logobox}>
                 <ImageBackground source = {require('../../component/images/LoginScreen/logo.config.png')} style = {styles.logobg}>
                 </ImageBackground>

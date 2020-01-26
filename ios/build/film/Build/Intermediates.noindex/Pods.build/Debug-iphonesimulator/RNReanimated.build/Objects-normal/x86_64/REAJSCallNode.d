@@ -1,0 +1,38 @@
+dependencies: \
+  /Users/macbookpro/react-native-film/node_modules/react-native-reanimated/ios/Nodes/REAJSCallNode.m \
+  /Users/macbookpro/react-native-film/ios/Pods/Target\ Support\ Files/RNReanimated/RNReanimated-prefix.pch \
+  /Users/macbookpro/react-native-film/node_modules/react-native-reanimated/ios/Nodes/REAJSCallNode.h \
+  /Users/macbookpro/react-native-film/node_modules/react-native-reanimated/ios/Nodes/REANode.h \
+  /Users/macbookpro/react-native-film/node_modules/react-native-reanimated/ios/REANodesManager.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTBridgeModule.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTInspectorDevServerHelper.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTPackagerConnection.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTUIManager.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTBridge.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTBridgeDelegate.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTJavaScriptLoader.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTFrameUpdate.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTInvalidating.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTRootView.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTViewManager.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/Yoga/yoga/Yoga.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/Yoga/yoga/YGEnums.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/Yoga/yoga/YGMacros.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/Yoga/yoga/YGValue.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTEventDispatcher.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/UIView+React.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTComponent.h \
+  /Users/macbookpro/react-native-film/node_modules/react-native-reanimated/ios/REAModule.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTEventEmitter.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTUIManagerObserverCoordinator.h \
+  /Users/macbookpro/react-native-film/ios/Pods/Headers/Public/React-Core/React/RCTUIManagerUtils.h \
+  /Users/macbookpro/react-native-film/node_modules/react-native-reanimated/ios/Nodes/REAValueNode.h

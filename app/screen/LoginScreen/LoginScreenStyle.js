@@ -21,7 +21,8 @@ export const styles = StyleSheet.create({
         fontWeight: "bold",
         fontStyle: "normal",
         textAlign: "center",
-        color: "#ffbb3b"
+        color: "#ffbb3b",
+
     },
     moviebutton: {
             width: 30,
@@ -72,8 +73,8 @@ export const styles = StyleSheet.create({
             alignItems:'center'
     },    
     logobox:{
-        width: 151,
-        height: 152,
+        width: 170,
+        height: 170,
         borderRadius: 12,
         backgroundColor: "#ffffff",
         shadowColor: "rgba(0, 0, 0, 0.24)",
@@ -86,7 +87,7 @@ export const styles = StyleSheet.create({
         marginTop: '30%',
         marginLeft: '30%',
         marginBottom: '5%',
-        padding: '3%',
+        padding: '5%',
         paddingLeft:'6%',
         justifyContent:'space-between',
         alignItems:'center'
