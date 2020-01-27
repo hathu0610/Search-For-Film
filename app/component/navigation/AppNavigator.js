@@ -1,11 +1,20 @@
 import React, { Component } from 'react'
 import { createStackNavigator } from 'react-navigation-stack';
-import { HomeScreen, SearchScreen,DownloadScreen,ProfileScreen } from "../../screen"
+import { HomeScreen, SearchScreen,DownloadScreen,ProfileScreen, SpecificMovieScreen } from "../../screen"
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { Icon } from 'react-native-elements'
 
+const HomeScreenStack = createStackNavigator({   
+  HomeScreen: HomeScreen,
+  SpecificMovieScreen: SpecificMovieScreen
+
+},
+{
+  initialRouteName: 'HomeScreen',
+});
+
 const AppStack = createBottomTabNavigator ({
-  'Home': {screen: HomeScreen,
+  'Home': {screen: HomeScreenStack,
             navigationOptions:{  
                 tabBarLabel:'Home',  
                 tabBarIcon: ({ tintColor }) => <Icon name="home" size={25} color={tintColor} />,  

@@ -23,7 +23,13 @@ export default class HomeScreen extends Component {
         }
 
         renderItem=(data)=>
-        <TouchableOpacity >
+        <TouchableOpacity onPress={() => {
+            this.props.navigation.navigate('SpecificMovieScreen',            {
+              Poster: data.item.Poster,
+              name: data.item.Title,
+              imdbid: data.item.imdbID
+            });
+          }}>
         <Image style = {{width:100, height:100,resizeMode:'contain'}} source = {{uri: data.item.Poster}}></Image>
         </TouchableOpacity>
 
@@ -39,14 +45,14 @@ export default class HomeScreen extends Component {
             <Text style = {{fontSize: 33, fontFamily: 'Times New Roman'}}> 4.0 </Text>
             <Text style = {{fontSize: 15,marginTop:5,fontFamily: 'Times New Roman'}}> Movie   |   Adventure   |   Comedy   |   Family </Text>
             <View style ={{width:'100%',alignItems:'flex-start'}}>
-                <Text style = {{color:"grey",fontSize: 20,margin:15,fontFamily: 'Arial',fontWeight:'bold'}}>Watching</Text>
+                <Text style = {{color:"grey",fontSize: 15,margin:15,fontFamily: 'Arial',fontWeight:'bold'}}>Watching</Text>
             </View>
             <View style ={{height:100,width:'100%'}}>
                 <FlatList 
                         data={this.state.dataSource}
                         renderItem={item=> this.renderItem(item)}
                         horizontal = {true}
-                    // keyExtractor= {item=>item.Search.Title.toString()}
+                        keyExtractor= {item=>item.imdbID.toString()}
                 />
             </View>
 
