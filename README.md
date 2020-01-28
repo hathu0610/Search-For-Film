@@ -6,8 +6,9 @@ An iOS app that allows users to search for information of their favorite films u
 
 Search for film allows the user to
 
-  *Register a new account
-  *Search for their favourite film and look up its plots, casts, ratings, etc
+  * Register a new account
+  
+  * Search for their favourite film and look up its plots, casts, ratings, etc
 
 # Views
 
