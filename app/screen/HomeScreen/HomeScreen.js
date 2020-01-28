@@ -11,7 +11,7 @@ export default class HomeScreen extends Component {
        }
 
        componentDidMount(){
-        fetch('http://www.omdbapi.com/?i=tt3896198&apikey=b0673a0f&s=frozen')
+        fetch('http://www.omdbapi.com/?i=tt3896198&apikey=b0673a0f&s=super')
         .then(response => response.json())
         .then((responseJson)=> {
           this.setState({
@@ -24,7 +24,7 @@ export default class HomeScreen extends Component {
 
         renderItem=(data)=>
         <TouchableOpacity onPress={() => {
-            this.props.navigation.navigate('SpecificMovieScreen',            {
+            this.props.navigation.navigate('SpecificMovieScreen', {
               Poster: data.item.Poster,
               name: data.item.Title,
               imdbid: data.item.imdbID

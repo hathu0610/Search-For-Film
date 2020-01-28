@@ -12,7 +12,7 @@ export default class DownloadScreen extends Component {
        }
 
        componentDidMount(){
-        fetch('http://www.omdbapi.com/?i=tt3896198&apikey=b0673a0f&s=frozen')
+        fetch('http://www.omdbapi.com/?i=tt3896198&apikey=b0673a0f&s=super')
         .then(response => response.json())
         .then((responseJson)=> {
           this.setState({

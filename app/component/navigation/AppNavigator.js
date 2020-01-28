@@ -4,13 +4,18 @@ import { HomeScreen, SearchScreen,DownloadScreen,ProfileScreen, SpecificMovieScr
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { Icon } from 'react-native-elements'
 
+
+
+const SearchScreenStack = createStackNavigator({   
+  SearchScreen: SearchScreen,
+  SpecificMovieScreen: SpecificMovieScreen
+
+});
+
 const HomeScreenStack = createStackNavigator({   
   HomeScreen: HomeScreen,
   SpecificMovieScreen: SpecificMovieScreen
 
-},
-{
-  initialRouteName: 'HomeScreen',
 });
 
 const AppStack = createBottomTabNavigator ({
@@ -21,7 +26,7 @@ const AppStack = createBottomTabNavigator ({
             },
   }
   ,
-  'SearchScreen': {screen: SearchScreen,
+  'SearchScreen': {screen: SearchScreenStack,
     navigationOptions:{  
         tabBarLabel:'Search',  
         tabBarIcon: ({ tintColor }) => <Icon name="search" size={25} color={tintColor} />,  
