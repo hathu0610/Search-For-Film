@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Image, FlatList,StyleSheet,TouchableOpacity, ImageBackground } from 'react-native'
+import { Text, View, Image, FlatList,StyleSheet,TouchableOpacity, ImageBackground,StackNavigator } from 'react-native'
 import {styles} from './HomeScreenStyle'
 export default class HomeScreen extends Component {
     constructor(props) {
@@ -37,6 +37,7 @@ export default class HomeScreen extends Component {
 
         return (
             <View style ={styles.container}>
+
             <ImageBackground style = {{width:"100%", height:500,ImageResizeMode:'center',justifyContent:'flex-end',alignItems:'center'}} source = {require('../../component/images/HomeScreen/Dora.png')}>
             <Image style = {{width:289, height:200,resizeMode:'contain'}} source = {require('../../component/images/HomeScreen/Doralogo.png')}></Image>
 

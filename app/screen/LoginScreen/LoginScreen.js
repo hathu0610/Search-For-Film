@@ -1,10 +1,45 @@
 import React, { Component } from 'react'
-import { Text, View, ImageBackground,Image,TextInput,Button,  TouchableHighlight} from 'react-native'
+import { Text, View, ImageBackground,Image,TextInput,Button,TouchableHighlight,AsyncStorage} from 'react-native'
 import {styles} from './LoginScreenStyle'
 import {CustomButton} from '../../component/CustomButton'
 import LinearGradient from 'react-native-linear-gradient';
-
+import {InputBox} from '../../component/InputBox'
 export default class LoginScreen extends Component {
+    constructor () {
+        super()
+        this.state = {
+          username: '',
+          password:'',
+          register: ''
+
+        }
+     }
+
+     handleTextChange = (key,value) => {
+        this.setState({[key]:value})
+    }
+    _retrieveData = async () => {
+        try {
+            const value = await AsyncStorage.getItem(this.state.username);
+            if (value !== null) {
+                // Our data is fetched successfully
+                if (value === this.state.password){
+                    this.setState({register:"pass"})
+                    this.props.navigation.navigate('AppStack',{username:this.state.username})
+                }
+                else {
+                    this.setState({register:"Wrong password. Try again"})
+                }
+            }
+            else {
+                this.setState({register:"Can't find any account with this name. You need to create a new account"})
+            }
+        } catch (error) {   
+            this.setState({register:"Wrong password. Try again"})
+
+             }
+    }
+
     render() {
         return (
             <View style = {{flex:1,width:'100%', alignItems:'center'}}>
@@ -19,25 +54,25 @@ export default class LoginScreen extends Component {
                 </View>
                 <View style ={{ height : "50%", paddingLeft :'15%'}}> 
                 <View >
-                    <Text style = {styles.title}> Email</Text>
+                    <Text style = {styles.title}> Username</Text>
                 </View>
                 <View>
-                    <TextInput style = {styles.inputbox} placeholder = "email here"/>
-                </View>
+                    <TextInput style = {styles.inputbox} placeholder = "username here" onChangeText={(text)=>{ this.handleTextChange('username',text) }}/>
+                </View>                
                 <View style ={{paddingTop: 10}}>
                     <Text style = {styles.title} > Password</Text>
                 </View>
                 <View >
                     <View style = {[styles.inputbox,{flexDirection:'row',justifyContent:'space-between'}]}>
-                    <TextInput  placeholder = "password here"/>
+                    <TextInput  placeholder = "password here" onChangeText={(text)=>{ this.handleTextChange('password',text) }}/>
                     <TouchableHighlight onPress={() => this.props.navigation.navigate('ForgotPassScreen')}>
                         <Text style = {[styles.heading,{fontWeight:'bold'}]} >FORGOT?</Text>
                     </TouchableHighlight>
-                    </View>
+                </View>
 
                 </View>
                 <View>
-                <CustomButton title = "LOGIN" buttoncolor = "#ffbb3b" textcolor = 'white' buttonclick = {() => this.props.navigation.navigate('AppStack')}/>
+                <CustomButton title = "LOGIN" buttoncolor = "#ffbb3b" textcolor = 'white' buttonclick = {this._retrieveData}/>
                 </View>
                 </View>
                 </LinearGradient>
@@ -49,7 +84,9 @@ export default class LoginScreen extends Component {
 
                 <View style  = {{alignItems:'center'}}>
                 <Text style = {[styles.heading,{color:'grey',marginBottom:10}]}> Don't have an account?</Text>
-                <Text style = {[styles.heading,{fontWeight:'bold'}]}> REGISTER</Text>
+                <TouchableHighlight onPress={() => this.props.navigation.navigate('RegisterScreen')}>
+                    <Text style = {[styles.heading,{fontWeight:'bold'}]}> REGISTER</Text>
+                </TouchableHighlight>
                 </View >
 
                 </ImageBackground>

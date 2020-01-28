@@ -41,12 +41,12 @@ export default class SearchScreen extends Component {
 
         return (
             <View style = {styles.container}>
-                <SearchBar lightTheme={true} 
+              <SearchBar lightTheme={true} 
                             containerStyle={{backgroundColor: '#f2f2f2'}} 
                             inputContainerStyle = {{backgroundColor:'lightgrey'}}
                             onChangeText={this.updateSearch}
                             value={search}
-                            />
+                            />  
                 <View >
                 <FlatList 
                         data={this.state.dataSource}

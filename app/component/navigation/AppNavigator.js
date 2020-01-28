@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { createStackNavigator } from 'react-navigation-stack';
-import { HomeScreen, SearchScreen,DownloadScreen,ProfileScreen, SpecificMovieScreen } from "../../screen"
+import { HomeScreen, SearchScreen,DownloadScreen,ProfileScreen, SpecificMovieScreen} from "../../screen"
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { Icon } from 'react-native-elements'
 
