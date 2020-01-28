@@ -1,5 +1,4 @@
 # Search-For-Film
-
 An iOS app that allows users to search for information of their favorite films using React Native, OMDB API
 
 # Film-App
