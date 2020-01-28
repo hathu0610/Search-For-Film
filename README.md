@@ -1,4 +1,15 @@
-# React-Native-Film-App
+# Search-For-Film
+
+An iOS app that allows users to search for information of their favorite films using React Native, OMDB API
+
+# Film-App
+
+Search for film allows the user to
+
+  *Register a new account
+  *Search for their favourite film and look up its plots, casts, ratings, etc
+
+# Views
 
 **Login Screen and Register Screen**
 
