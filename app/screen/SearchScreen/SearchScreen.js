@@ -31,8 +31,8 @@ export default class SearchScreen extends Component {
       }} style = {{flexDirection: 'row'}}>    
           <Image style = {styles.img} source = {{uri: data.item.Poster}}></Image>
           <View>
-              <Text style ={{fontSize:20}}>{data.item.Title}</Text>
-              <Text>{data.item.Year}</Text>
+                <Text style ={{fontSize:20,fontFamily: 'Georgia',}}>{data.item.Title}</Text>
+                <Text style ={{fontFamily: 'Georgia',color:'#f9a115'}}>{data.item.Year}</Text>
           </View>
       </TouchableOpacity>  
 

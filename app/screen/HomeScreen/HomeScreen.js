@@ -43,8 +43,8 @@ export default class HomeScreen extends Component {
 
             </ImageBackground>
 
-            <Text style = {{fontSize: 33, fontFamily: 'Times New Roman'}}> 4.0 </Text>
-            <Text style = {{fontSize: 15,marginTop:5,fontFamily: 'Times New Roman'}}> Movie   |   Adventure   |   Comedy   |   Family </Text>
+            <Text style = {{fontSize: 40, fontFamily: 'Georgia',color:'#ffbb3b',fontWeight:'bold'}}> 4.0 </Text>
+            <Text style = {{fontSize: 15,marginTop:5,fontFamily: 'Georgia'}}> Movie   |   Adventure   |   Comedy   |   Family </Text>
             <View style ={{width:'100%',alignItems:'flex-start'}}>
                 <Text style = {{color:"grey",fontSize: 15,margin:15,fontFamily: 'Arial',fontWeight:'bold'}}>Watching</Text>
             </View>

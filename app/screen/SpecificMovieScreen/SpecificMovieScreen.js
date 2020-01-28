@@ -33,7 +33,7 @@ export default class SpecificMovieScreen extends Component {
     renderItem=(data)=>      
     <View style = {{width: 130,height:130 }}>
     <Image style = {{width:100, height:100,resizeMode:'contain'}} source = {{uri:'https://upload.wikimedia.org/wikipedia/en/e/ee/Unknown-person.gif'}}></Image>
-    <Text style= {{width: 120,alignItems:'center',color:'grey'}}> {data.item} </Text>
+    <Text style= {{width: 120,alignItems:'center',color:'grey', fontFamily: 'Georgia'}}> {data.item} </Text>
     </View>   
 
     render() {

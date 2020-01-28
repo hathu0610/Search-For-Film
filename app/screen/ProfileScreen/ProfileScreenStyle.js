@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight:'bold',
         marginTop:30,
+        fontFamily:'Georgia'
       },
       circle: {
         marginTop:87,
