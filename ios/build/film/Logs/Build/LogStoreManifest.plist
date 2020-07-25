@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>245B99FC-BA47-4526-B550-474F38FFBEF1</key>
+		<key>ADD3E71D-D8F6-4C5D-AE30-28C37D6E8D9A</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>245B99FC-BA47-4526-B550-474F38FFBEF1.xcactivitylog</string>
+			<string>ADD3E71D-D8F6-4C5D-AE30-28C37D6E8D9A.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,13 +32,47 @@
 			<key>signature</key>
 			<string>Building workspace film with scheme film and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>601890618.44525397</real>
+			<real>603606976.37828505</real>
 			<key>timeStoppedRecording</key>
-			<real>601890619.41843104</real>
+			<real>603607033.38683796</real>
 			<key>title</key>
 			<string>Building workspace film with scheme film and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>245B99FC-BA47-4526-B550-474F38FFBEF1</string>
+			<string>ADD3E71D-D8F6-4C5D-AE30-28C37D6E8D9A</string>
+		</dict>
+		<key>D56EE60D-333A-4A80-9A19-F9BB9448D260</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D56EE60D-333A-4A80-9A19-F9BB9448D260.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>film project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>film</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace film with scheme film and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>603030111.38380003</real>
+			<key>timeStoppedRecording</key>
+			<real>603030115.62695205</real>
+			<key>title</key>
+			<string>Building workspace film with scheme film and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>D56EE60D-333A-4A80-9A19-F9BB9448D260</string>
 		</dict>
 	</dict>
 </dict>

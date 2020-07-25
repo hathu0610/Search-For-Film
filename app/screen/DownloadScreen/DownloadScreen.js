@@ -26,7 +26,7 @@ export default class DownloadScreen extends Component {
         renderItem=(data)=>
         <View style = {{flexDirection:'row'}}>      
             <Image style = {styles.img} source = {{uri: data.item.Poster}}></Image>
-            <View>
+            <View style = {{height:100,justifyContent:'center'}}>
                 <Text style ={{fontSize:20,fontFamily: 'Georgia',color:'#f9a115'}}>{data.item.Title}</Text>
                 <Text style ={{fontFamily: 'Georgia'}}>{data.item.Year}</Text>
             </View>

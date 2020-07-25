@@ -4,17 +4,38 @@ import { HomeScreen, SearchScreen,DownloadScreen,ProfileScreen, SpecificMovieScr
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { Icon } from 'react-native-elements'
 
-
+const customizeNavigationOptions ={
+  title:null,
+  headerStyle: {
+            backgroundColor: '#F2F2F2',
+            shadowColor: 'transparent',
+            backTitle: null,
+  },
+  headerTintColor: '#9B9B9B',
+  headerBackTitle: 'BACK'
+}
 
 const SearchScreenStack = createStackNavigator({   
-  SearchScreen: SearchScreen,
-  SpecificMovieScreen: SpecificMovieScreen
+  SearchScreen: {screen: SearchScreen,
+    navigationOptions: {
+      header: null,
+    }
+  },
+  SpecificMovieScreen: {screen: SpecificMovieScreen,
+    navigationOptions: customizeNavigationOptions
+  }
 
 });
 
 const HomeScreenStack = createStackNavigator({   
-  HomeScreen: HomeScreen,
-  SpecificMovieScreen: SpecificMovieScreen
+  HomeScreen: {screen: HomeScreen,
+    navigationOptions: {
+      header: null,
+    }
+  },
+  SpecificMovieScreen: {screen: SpecificMovieScreen,
+    navigationOptions: customizeNavigationOptions
+  }
 
 });
 
@@ -23,7 +44,7 @@ const AppStack = createBottomTabNavigator ({
             navigationOptions:{  
                 tabBarLabel:'Home',  
                 tabBarIcon: ({ tintColor }) => <Icon name="home" size={25} color={tintColor} />,  
-            },
+            }
   }
   ,
   'SearchScreen': {screen: SearchScreenStack,

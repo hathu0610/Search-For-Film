@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Text, View, Image, FlatList,StyleSheet,TouchableOpacity, ImageBackground,StackNavigator } from 'react-native'
 import {styles} from './HomeScreenStyle'
 export default class HomeScreen extends Component {
+  static navigationOptions = {
+    header: null,
+  };
     constructor(props) {
         super(props);
         this.state = {

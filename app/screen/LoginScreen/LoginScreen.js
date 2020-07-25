@@ -5,6 +5,7 @@ import {CustomButton} from '../../component/CustomButton'
 import LinearGradient from 'react-native-linear-gradient';
 import {InputBox} from '../../component/InputBox'
 export default class LoginScreen extends Component {
+
     constructor () {
         super()
         this.state = {
@@ -64,7 +65,7 @@ export default class LoginScreen extends Component {
                 </View>
                 <View >
                     <View style = {[styles.inputbox,{flexDirection:'row',justifyContent:'space-between'}]}>
-                    <TextInput  placeholder = "password here" onChangeText={(text)=>{ this.handleTextChange('password',text) }}/>
+                    <TextInput style = {{paddingLeft: 5,width:150}} secureTextEntry = {true} placeholder = "password here" onChangeText={(text)=>{ this.handleTextChange('password',text) }}/>
                     <TouchableHighlight onPress={() => this.props.navigation.navigate('ForgotPassScreen')}>
                         <Text style = {[styles.heading,{fontWeight:'bold'}]} >FORGOT?</Text>
                     </TouchableHighlight>

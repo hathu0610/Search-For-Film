@@ -53,7 +53,7 @@ export const styles = StyleSheet.create({
         },
         shadowRadius: 6,
         shadowOpacity: 1
-    },
+    },      
     heading: {
         width: '100%',
         height: 19,
